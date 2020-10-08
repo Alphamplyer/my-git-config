@@ -35,8 +35,8 @@
 	
 	# Commit
 	c = commit -m
-    m = commit --amend -m
-    ca = commit -a --verbose
+	m = commit --amend -m
+	ca = commit -a --verbose
 	ac = !git add . && git commit -m
 	
 	# Branch
