@@ -6,6 +6,11 @@
 	gpgsign = true
 [core]
 	editor = code
+
+	# set autocrlf option to :
+	#   -  'input' if you are on a Linux distribution
+	#   -  'true' if you are on Windows and work also with Linux projects
+        #   -  'false' if you are on Windows and work only with Windows projects  
 	autocrlf = input
 [color]
 	branch = auto
