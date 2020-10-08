@@ -1,7 +1,7 @@
 # My Git Config
 
 ## Normal Settings
-```TOML
+```INI
 [commit]
 	gpgsign = true
 [core]
@@ -18,7 +18,7 @@
 ```
 
 ## Alias
-```TOML
+```INI
 [alias]
 	# one-line log
 	l = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short
