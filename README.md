@@ -5,7 +5,11 @@
 [commit]
 	gpgsign = true
 [core]
+	# uncomment for Linux
 	editor = code
+
+	# uncomment for Windows
+	# editor = \"C:\\Users\\Alphamplyer\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe\" --wait
 
 	# set autocrlf option to :
 	#   -  'input' if you are on a Linux distribution
@@ -28,26 +32,30 @@
 	# one-line log
 	l = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short
 
+	# Git to Github
+	g2gh = !git branch -M main && git remote add origin
+
 	# Checkout
 	co = checkout
 	cob = checkout -b
 	
 	# Fetch, push, pull and remote
-	p = push
-	fp = fetch -p
 	rao = remote add origin
+	fp = fetch -p
+	p = push
 	pushit = push -u origin --all
 	
 	# Commit
-	c = commit -m
-	m = commit --amend -m
-	ca = commit -a --verbose
 	ac = !git add . && git commit -m
+	c = commit -m
+    ca = commit -a --verbose
+    m = commit --amend -m
 	
 	# Branch
 	ba = branch -a
 	bd = branch -d
 	bD = branch -D
+	dc = diff --cached
 	
 	#diff
 	d = diff
@@ -55,9 +63,9 @@
 	dc = diff --cached
 
 	# Feature improving aliases
+	st = status -sb
 	a = add
 	ap = add -p
-	st = status -sb
 	
 	# list aliases
 	la = "!git config -l | grep alias | cut -c 7-"
