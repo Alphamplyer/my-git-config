@@ -48,8 +48,8 @@
 	# Commit
 	ac = !git add . && git commit -m
 	c = commit -m
-    ca = commit -a --verbose
-    m = commit --amend -m
+    	ca = commit -a --verbose
+    	m = commit --amend -m
 	
 	# Branch
 	ba = branch -a
